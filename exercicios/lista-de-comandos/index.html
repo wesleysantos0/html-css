@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de comandos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Comandos Para Fixar</h1>
+        <h2>Hyperlink</h2>
+        <p>Para criar um Hyperlink, devemos criar <strong>ANCORAS</strong>, através da tag <strong><q> < A ></q></strong>.O principal atributo dessa tag é <strong>HREF</strong>, que cria uma referencia hipertexto.</p>
+        <p>Para pode controlar para onde o site de destino vai abrir, podemos usar o atributo <strong>TARGET</strong>, que suporta os seguintes valores.</p>
+        <ul>
+            <li><strong>_BLANK</strong> -Vai abrir o link em uma nova janela em braco.</li>
+            <li><strong>_SELF</strong> -Vai abrir o link na janela ou frame atual (padrào).</li>
+            <li><strong>_TOP</strong>-Vai desfazer todos os frames e abrir o destino no navegador completo.</li>
+            <li><strong>_PARENT</strong>- Similiar o uso do <strong>_TOP</strong> em referencia a janela mãe.</li>
+        </ul>
+        <h3>Esse Link é seu ou dos outros ?</h3>
+            <p>existe um recurso bem interessante para links, que é indicar a natureza do destino usando o atributo <strong>REL.</strong></p>
+            <ul>
+                <li><strong>NEXT</strong> Indica que o link é para a proxima parte do documento atual.</li>
+                <li><strong>PREV</strong> Indica que o link é para a parte anterior do documento.</li>
+                <li><strong>AUTHOR</strong> Indica que o link é para o site do autor do atual artigo.</li>
+                <li><strong>EXTERNAL</strong> Indica que o link é para outro site que náo faz parte do site.</li>
+    </main>
+        </ul>
+        <h2>Imagens Dinamicas, audio e video.</h2>
+        <h3>PICTURE:</h3>
+        <p>O elemento HTML <strong>< picture ></strong> é um container usado para especificar múltiplos elementos <strong>< source ></strong> para um elemento específico <strong>< img ></strong> contido nele. O navegador irá escolher a imagem mais adequada de acordo com o layout atual da página, caracteristicas do dispositivo em que será exibido (p.e. um dispositivo normal ou um hiDPI), e a habilidade do navegador de renderizar um certo tipo de imagem (p.e., envie uma imagem WebP para os navegadores baseados no Chromium ou PNG para navegadores não-Chromium); se não houver correspondência entre os elementos <strong>< source ></strong>, o arquivo especificado pelo elemento <img> será selecionado. A imagem selecionada é então exibida no espaço ocupado pelo elemento <img>.</p>
+
+        <h4>SOURCE: </h4>
+        <p>O elemento source é utilizado para especificar múltiplos recursos de mídia de elementos <strong>< picture ></strong>, <strong>< audio ></strong> ou <strong>< video ></strong> em HTML5. É um elemento vazio. É normalmente usado para disponibilizar multiple formats supported by different browsers.</p>
+
+        
+            <ul>
+                <li>
+                    <strong>SRCSET</strong> -Vai configurar o nome da imagem que será carregada quando o tamanho indicado for atingido.</li>
+                <li>
+                    <strong>TYPE</strong> -Vai indicar o media TYPE da imagem que usamos.
+                    
+                </li>
+                <li>
+                    <strong>MEDIA</strong> -Indica o tamanho maximo a ser considerado para carregar a imagem indicada no atributo
+                </li>
+            </ul>
+        <h3>AUDIO</h3>
+        <p>O elemento audio é utilizado para embutir conteúdo de som em um documento HTML. Vamos analisar os principais atributos da tag  <strong>< audio ></strong> antes de mais nada:
+        </p> 
+            <p>
+                ‣ O atributo <strong>PRELOAD</strong> indica se o áudio será pré-carregado ou não e aceita três
+                valores:
+            </p> 
+            <ul>
+                <li>
+                     <strong>METADATA</strong> -vai carregar apenas as informações sobre o arquivo (tamanho,
+                    tempo, informações de direitos, etc)
+                </li>
+                 <li><strong>NONE</strong> -não vai carregar absolutamente nada até que o usuário clique no botão play ou um script inicie a reprodução</li>
+                
+                 <li>
+                     <strong>AUTO</strong> -(padrão) vai carregar o arquivo de áudio inteiro assim que a página for carregada, mesmo que o usuário nunca aperte o play.
+                 </li>
+            </ul>
+        </p>
+                <p>
+                    ‣ O atributo <strong>CONTROLS</strong> vai apresentar o player na tela. Caso não seja colocado na tag
+                    < audio >, o controle será transparente e o usuário não poderá interagir com ele.
+                </p>
+            <p>
+                ‣ O atributo <strong>AUTOPLAY</strong>, quando inserido, vai iniciar a reprodução do áudio assim que
+                a página for carregada.
+            </p>
+            <p>
+                ‣ O atributo <strong>LOOP</strong>
+                 vai fazer com que o áudio seja repetido eternamente assim que
+                terminar a sua reprodução.
+            </p>
+            
+            <p>
+                Dentro da tag < audio >, adicionamos vários < source > com formatos diferentes do mesmo áudio. Coloque na parte de cima o seu formato favorito. Os demais só serão
+                carregados caso o de cima falhe. Caso todos falhem, criamos um parágrafo que
+                permite o download do arquivo MP3 para ouvir no player padrão do dispositivo.
+            <p>
+        <h3>VIDEOS</h3>
+        <p>Para inserir um vídeo em nosso site, podemos utilizar a nova tag <strong>< video ></strong> da HTML5, caso o arquivo esteja hospedado no nosso próprio servidor.</p>
+        <p>Antes de mais nada, vamos criar a tag < video > e configurar alguns atributos importantes: </p>
+        <ul>
+            <li>
+                <strong>width</strong> vai indicar a largura que o vídeo vai ter na tela.
+            </li>
+            <li>
+                <strong>poster</strong> configura uma imagem que vai aparecer como uma capa, enquanto o visitante não aperta o play para reproduzir o vídeo.
+            </li>
+            <li>
+                <strong>controls</strong> vai configurar se os controles do vídeo vão aparecer na parte inferior da mídia. Por padrão, os controles não aparecerão, mas basta colocar a palavracontrols na tag < video >. 
+            </li>
+            <li>
+                <strong>autoplay</strong> diz para o navegador se o vídeo vai começar a tocar automaticamente,assim que a página for carregada. 
+            </li>
+        </ul>
+        <p>Os formatos suportados são MPEG, WEBM e OGG, mas os dois primeiros são os que possuem maior compatibilidade com os navegadores atualmente.</p>
+        <h3>IFRAME</h3>
+        <p>No YouTube, abra o vídeo que você quer incorporar e clique no link COMPARTILHAR que fica abaixo do título.</p>
+        <p>Ao clicar no link indicado anteriormente, uma janela vai aparecer, te dando as opções de compartilhamento. Escolha o item INCORPORAR.</p>
+        <p>O código HTML personalizado vai           aparecer em uma nova janela de contexto, incluindo um botão que permite COPIAR o código com a tag do  IFRAME  que vai aparecer diretamente na sua página. Volte ao seu editor de código e cole a tag no seu arquivo HTML que vai apresentar o vídeo. </p>
+
+        <h2>INTRODUÇÃO ÀS CSS</h2>
+        <p>A forma mais simples de aplicar estilos: <strong>CSS inline style</strong>, aplicando a formatacao dentro das tags, por isso em linha.</p>
+        <p>Estilizando de maneira mais interessante: <strong>CSS internal style</strong>, Para aplicar estilos de forma mais dinâmica e prática, podemos adicionar uma tag  <strong>style</strong> > dentro da área <strong>head</strong> do nosso documento HTML local. </p>
+        <p><strong>ATENÇÃO!</strong> A tag <strong>style</strong>  deve estar dentro da área <strong>head</strong> do seu documento HTML5. Se você colocá-la em qualquer outro local, como dentro da tag <strong>body</strong>, o resultado até pode funcionar, mas seu código estará fora dos padrões estabelecidos pela W3C. Siga sempre as regras!</p>
+        <h2><a href="pag2.html" type="_SELF" >NEXT </a></h2>
+            
+            
+            
+            
+        
+
+
+    
+
+</body>
+</html>

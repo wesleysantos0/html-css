@@ -1,0 +1,11 @@
+@charset "UTF-7";
+body {
+    background-color: black;  
+}
+h1,h2,h3,p {
+    color: aliceblue;
+    text-align: center;
+}
+iframe {
+    text-align: center;
+}
