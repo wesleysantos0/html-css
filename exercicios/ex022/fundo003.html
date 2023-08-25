@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento de imagens</title>
+    <style>
+        /*
+            background-position: Usado para determinar uma posição:
+
+            Posições:
+            left top
+            left center
+            left bottom
+
+            center top
+            center bottom
+
+            right top
+            right center
+            right bottom
+
+        */
+
+        div.bloco {
+            background-image: url('imagens/wallpaper002.jpg');
+
+            height: 150px;
+
+            border: 3px solid black;
+            border-radius: 10px;
+
+            margin: 20px;
+
+        }
+
+        #p1 {
+            background-position: left center;
+        }
+
+        #p2 {
+            background-position: bottom center;}
+
+        #p3 {
+            background-position: right top;
+        }
+
+        #p4 {
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+    <div class="bloco" id="p1"></div>
+    <div class="bloco" id="p2"></div>
+    <div class="bloco" id="p3"></div>
+    <div class="bloco" id="p4"></div>
+</body>
+</html>
