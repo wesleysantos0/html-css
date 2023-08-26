@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamneto em containers</title>
+    <style>
+        #container {
+            background-size: 100% 100%;
+            background-color: violet;
+            background-image: url('imagens/target001.png');
+            background-repeat: no-repeat;
+            width: 800px;
+            height: 96vh;
+            position: relative;
+
+        }
+        #conteudo {
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-color: yellow;
+            background-image: url('imagens/target001.png');
+            width: 200px;
+            height: 150px;
+            position: absolute;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo"></article>
+    </section>
+</body>
+</html>
