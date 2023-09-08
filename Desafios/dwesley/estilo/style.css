@@ -141,6 +141,8 @@ a {
     color: #D91818;
     padding: 5px;
 }
-#github {
-    background-image: url(../imagens/git.jpg);
+
+a:hover {
+    background-color: rgba(128, 126, 126, 0.205);
+    color: var(--cor05);
 }
