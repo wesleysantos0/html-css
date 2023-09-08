@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Caveat&family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+
+:root {
+    --font01:'Bricolage Grotesque', sans-serif;
+    --font02:'Black Ops One', cursive;
+
+    --cor01:#5C8EF2;
+    --cor02:#44AFF2;
+    --cor03:#38E0F2;
+    --cor04:#55A63F;
+    --cor05:#D91818;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html,body {
+    min-height: 100vh;
+}
+header {
+    background-color: black;
+    color: var(--cor01);
+    text-align: center;
+    font-family: var(--font01);
+    font-variant: small-caps;
+    
+}
+
+header > h1 {
+    font-size: 5em;
+    padding-top: 20px;
+    font-variant: small-caps;
+}
+
+header > p {
+    font-family: var(--font02);
+    font-size: 1em;
+    color: var(--cor04);
+    padding-bottom: 50px;
+}
+
+section {
+    text-indent: 25px;
+    text-align: justify;
+    line-height: 1.8em;
+
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 10px;
+
+    background-color: white;
+    color:black;
+
+}
+
+section > h2 {
+    color: var(--cor02);
+    padding-bottom: 30px;
+    font-size: 6vw;
+    font-family: var(--font01);
+    font-variant: small-caps;
+
+}
+
+section > p {
+    font-family: var(--font02);
+    font-size: 2.2vh;
+    padding-top: 25px;
+    padding-bottom: 2em;
+}
+
+.imagem {
+    background-color: #38E0F2;
+    color: white;
+    box-shadow: inset 6px 6px 53px 0px rgba(88, 88, 88, 0.966);
+    
+    background-attachment: fixed;
+    
+}
+.imagem > p {
+    background-color: rgba(0, 0, 0, 0.473);
+    width: 80vw;
+
+    display: inline-block;
+    font-size: 1.5em;
+
+    padding: 5px;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+
+    border-radius: 10px;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+aside#img01 {
+    display: block;
+    background-image: url(../imagens/pac-man.jpg);
+
+    background-size: auto;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+#img02 {
+    display: block;
+    background-image: url(../imagens/mario.png);
+
+    background-size: auto;
+
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+#img03 {
+    display: block;
+    background-image: url(../imagens/retro.jpg);
+
+    background-size: auto;
+
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: #D91818;
+    padding: 5px;
+}
+#github {
+    background-image: url(../imagens/git.jpg);
+}
