@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>teste Com Formularios</h1>
+
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" autocomplete="name" size="30" placeholder="Nome Completo" required>
+        </p>
+
+        <p>
+            <label for="idad">Idade:</label>
+            <input type="number" name="idade" id="idad" size="2" min="5" max="18" required>
+        </p>
+
+        <p>
+            <label for="idata">Data da Prova</label>
+            <input type="date" name="data" id="idata" value="2023-06-15">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+        </p>
+    </form>
+</body>
+</html>
