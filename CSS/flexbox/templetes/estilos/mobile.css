@@ -1,0 +1,323 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    margin: 0 auto;
+    width: 100vw;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 1;
+    
+}
+header > p{
+    background-color: lightgrey;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 8px;
+    
+}
+
+header .container-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+   /* border: 3px solid black;  Retirar */
+}
+
+header .container-header > .bars >a{
+    color: black; 
+}
+
+header .material-symbols-outlined {
+    font-size: 35px;
+
+}
+
+header .container-header > .logo-principal img {
+   max-width: 400px;
+   width: 140px;
+}
+
+/* estilos do main e suas categorias*/
+
+main {
+    margin: 0 auto;
+   /* border: 2px solid black; */
+}
+
+/* Categorias de produtos */
+
+
+.container-categorias {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+main > .container-categorias > .categoria {
+    height: 500px;
+    width: 480px;
+    background-color: gray;
+    margin: 10px;
+    text-align: center;
+}
+main .container-categorias  h1{
+    color: white;
+    position: relative;
+    top: 220px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.589);
+}
+
+main .saibamais {
+    border: 1px solid rgba(255, 255, 255, 0.705);
+    color: white;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 30px;
+    position: relative;
+    top: 250px;
+}
+main .saibamais:hover {
+    background-color: rgba(255, 255, 255, 0.616);
+    color: rgba(0, 0, 0, 0.562);
+    border: 1px solid rgba(0, 0, 0, 0.685);
+    transition: .3s;
+}
+
+
+main .saibamais > a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.397);
+}
+main .saibamais > a:hover {
+    color: black;
+    transition: .3s;
+    
+}
+
+main > .container-categorias > #categoria-01 {
+    background-image: url(../imagens/imgs-categorias/Colar\ Coração.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 0px 4px  rgba(0, 0, 0, 0.637);
+    transition: .5s;
+    border-radius: 10px;
+    
+}
+
+main > .container-categorias > #categoria-01:hover {
+    transform: scale(1.02);
+}
+
+
+
+main > .container-categorias > #categoria-02 {
+    background-image: url(../imagens/imgs-categorias/download\ \(11\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 0px 4px  rgba(0, 0, 0, 0.637);
+    transition: .5s;
+    border-radius: 10px; 
+}
+
+main > .container-categorias > #categoria-02:hover {
+    transform: scale(1.02);
+}
+
+main > .container-categorias > #categoria-03 {
+    background-image: url(../imagens/imgs-categorias/Prata\ 925.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 0px 4px  rgba(0, 0, 0, 0.637);
+    transition: .5s;
+    border-radius: 10px; 
+}
+
+main > .container-categorias > #categoria-03:hover {
+    transform: scale(1.02);
+}
+
+/* Produtos destaques*/
+
+.prod-dest {
+    margin-left: 40px;
+    margin: 30px;
+}
+
+.container-produtos-destaques {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container-produtos-destaques > .produto-destaque {
+    /*background-color: gray;*/
+    width: 300px;
+    height: 450px;
+    padding: 20px;
+    margin-top: 80px;
+    box-shadow: 0px 0px 8px #80808093;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+#prod-dest01 {
+    background-image: url(../imagens/imgs-categorias/Colar\ de\ corrente\ Minimalista.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+}
+#prod-dest02 {
+    background-image: url(../imagens/imgs-categorias/download\ \(10\).jpg);
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+}
+/* frete do produto*/
+
+#inf01{
+    display: block;
+    width: 100px;
+    background-color: #ffa600;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 25px;
+}
+
+.alinhamento-informacao-do-produto-destaque {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 250px;
+    height:100px; 
+    text-align: center;
+    background-color: white;
+}
+
+.alinhamento-informacao-do-produto-destaque span > a {
+    font-size: 1.1em;
+    text-decoration: none; 
+    color: black;
+}
+
+/* rede social */
+
+section.redes-sociais {
+    display: block;
+    text-align: center;
+    margin: 20px 0px;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+
+}
+
+.descricao-social {
+    display: flex;
+    justify-content: center;
+}
+.descricao-social h1 > a {
+    text-decoration: none;
+    color: white;
+    margin: 0px 3px 0px 20px;
+}
+section.redes-sociais > h2 {
+    margin: 20px 0px;
+}
+section.redes-sociais > h1 {
+   text-align: center; 
+   padding: 20px;
+   border-bottom: 1px solid rgba(211, 211, 211, 0.363);
+}
+
+/* teste botao */
+
+/* .btn-test {
+    display: block;
+    position: relative;
+    left: 45%;
+    width: 100px;
+    padding: 5px;
+    background-color: red;
+    font-size: 1.3em;
+    text-align: center;
+    border-radius: 30px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 2px 3px rgb(165, 51, 51);
+}
+.btn-test:hover {
+    box-shadow: none;
+    transition: .20s;
+    border: 1px solid white;
+} */
+
+/*  Configurações do Rodapé */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    /* align-content: baseline; */
+    justify-content: space-around; 
+    gap: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    padding: 20px;
+}
+footer li {
+    list-style-type: none;
+    padding: 2px;
+}
+footer li a {
+    color: black;
+    text-decoration: none;
+}
+footer li a:hover {
+    color: darkgray;
+    text-decoration: underline;
+}
+
+footer img {
+    border: 1px solid #80808085;
+    padding: 5px;
+}
+
+.formas-de-pagamentos h2  {
+    margin-bottom: 30px;
+    /* display: flex; */
+    /* align-items: baseline; */
+}
+
+.envios {
+    margin: 20px;
+}
+
+.envios h2 {
+    margin-bottom: 30px;
+}
+
+.conteudo-footer {
+    border-top: 2px solid black;
+    padding-top: 5px;
+}
+

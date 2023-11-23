@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/* As propriedades do recipiente flexível são:
+    --Flex-direction
+    --Flex-Wrap
+    --Flex-FLow
+    --Justify-content
+    --align-items
+    --align-content
+
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    text-align: center;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: inset 0px 0px  15px rgba(0, 0, 0, 0.521);
+}
+h2{
+    top: 0px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    
+}
+
+div.container000 {
+    display: flex;
+    background-color: #2877d1;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+div.exp {
+    background-color: white;
+    padding: 10px;
+    width: 50px;
+    margin: 10px;
+    border: 2px solid black;
+}
+p {
+    background-color: gray;
+    padding: 15px;
+}
+
+#f001 {
+    display: flex;
+    background-color: rgb(40, 119, 209);
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#f002 {
+    display: flex;
+    background-color: rgb(40, 119, 209);
+    flex-direction: row;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#f003 {
+    display: flex;
+    background-color: rgb(40, 119, 209);
+    flex-direction: row-reverse;
+    text-align: center;
+    margin-top: 15px;
+}
+#f004 {
+    background-color: rgb(252, 252, 155);
+    flex-direction: row;
+}
+
+
+
+

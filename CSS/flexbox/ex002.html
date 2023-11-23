@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/flexbox02.css">
+    
+    <title>Flexbox</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+        }
+
+        header, nav, main, aside, footer {
+            display: flex;
+            background-color: lightgray;
+            margin: 3px;
+            flex: 1 1 100vw;
+            flex-wrap: wrap;
+        }
+        header {
+            flex: 1 1 100vw;
+            height: 100px;
+        }
+        nav {
+            flex: 1 1 200px;
+        }
+        main {
+            flex: 20 1 500px;
+            height: calc(100vh- 224px);
+        }
+        aside {
+            flex: 1 1 200px;
+        }
+        footer {
+            flex: 1 1 100px;
+            height: 100px;
+        }
+    </style>
+
+</head>
+<body>
+   <header>cabeçalho</header>
+   <nav>menu</nav>
+   <main>conteudo-principal
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse non consectetur atque provident debitis? Nam commodi, ex deleniti dolor voluptatibus praesentium. Natus neque explicabo qui architecto nisi laudantium voluptas ratione. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque itaque error, asperiores, dolorum quas vero sint assumenda repellat libero quidem ipsum minus amet quod. Cum nobis magnam hic aspernatur nisi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A explicabo odio dolorum assumenda facere aperiam cum vero adipisci beatae doloremque ducimus et dolorem dignissimos, blanditiis consectetur ea? Repellat, deleniti doloribus?</p>
+   </main>
+   <aside>complemento</aside>
+   <footer>rodape</footer>
+</body>
+</html>

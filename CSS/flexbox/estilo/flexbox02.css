@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+    position: sticky;
+    top: 0px;
+    height: 80px;
+    width: 100vw;
+    background-color: black;
+}
+ul {
+    list-style-type: none
+}
+li {
+   display: inline-flex; 
+   
+}
+
+menu a {
+    color: white;
+    text-decoration: none;
+    background-color: orange;
+    padding: 10px;
+    
+}
