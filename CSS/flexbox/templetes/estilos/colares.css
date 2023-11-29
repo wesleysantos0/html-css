@@ -5,6 +5,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+div.nav-col {
+    text-align: center;
+}
+div.nav-col  li {
+    display: inline;
+    text-align: center;
+} 
+div.nav-col  li >a {
+    color: black;
+    text-decoration: none;
+} 
+div.nav-col  li >a:hover {
+    color: #919191;
+    text-decoration: underline;
+}
+
 
 /* Categoria-colares */
 
@@ -13,6 +29,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    gap: 25px;
 
     background-color: rgba(211, 211, 211, 0.692);
     padding: 10px;
@@ -23,6 +40,12 @@
     flex-direction: column;
     width: 380px;
     height: 480px;
+    padding: 5px;
     background-color: white;
 
+}
+
+section.col-prodt > img.col-prodt-img {
+    height: 75%;
+    border-radius: 10px;
 }
