@@ -83,33 +83,25 @@ main .container-categorias  h1{
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.589);
 }
 
-main .saibamais {
+main .saibamais >a {
     border: 1px solid rgba(255, 255, 255, 0.705);
     color: white;
     padding: 10px 20px;
     background-color: rgba(255, 255, 255, 0);
     border-radius: 30px;
+    text-decoration: none;
+    text-shadow: 0px 0px 4px #00000059;
+
     position: relative;
     top: 250px;
 }
-main .saibamais:hover {
+main .saibamais:hover a:hover  {
     background-color: rgba(255, 255, 255, 0.616);
     color: rgba(0, 0, 0, 0.562);
     border: 1px solid rgba(0, 0, 0, 0.685);
     transition: .3s;
 }
 
-
-main .saibamais > a {
-    color: white;
-    text-decoration: none;
-    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.397);
-}
-main .saibamais > a:hover {
-    color: black;
-    transition: .3s;
-    
-}
 
 main > .container-categorias > #categoria-01 {
     background-image: url(../imagens/imgs-categorias/Colar\ Coração.jpg);
@@ -123,7 +115,7 @@ main > .container-categorias > #categoria-01 {
 }
 
 main > .container-categorias > #categoria-01:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
 }
 
 
@@ -139,7 +131,7 @@ main > .container-categorias > #categoria-02 {
 }
 
 main > .container-categorias > #categoria-02:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
 }
 
 main > .container-categorias > #categoria-03 {
@@ -153,7 +145,7 @@ main > .container-categorias > #categoria-03 {
 }
 
 main > .container-categorias > #categoria-03:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
 }
 
 /* Produtos destaques*/
