@@ -53,7 +53,7 @@ header .material-symbols-outlined {
 
 header .container-header > .logo-principal img {
     height: 80px;
-    width: 100%;
+    width: 80px;
     max-width: 400px;
 }
 
@@ -331,3 +331,35 @@ footer img {
     line-height: 2em;
 }
 
+/* container-informacoes */
+
+.container-informacoes  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+}
+.content-inf{
+    display: flex;
+    border: 2px solid red;
+    width: 250px;
+   height: 250px;
+   gap: 55px;
+   overflow: auto;
+}
+
+.content-inf01{
+    height: 100%;
+    width: 100%;
+    border: 2px solid orange;
+}
+
+
+.content-inf h2 {
+    font-size: 27px;
+}
+
+.content-inf01 span {
+    color: blue;
+    font-size: 7rem;
+}
